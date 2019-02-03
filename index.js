@@ -23,7 +23,7 @@ var renderSearchResults = (data) => {
 //     data.items.map(result => {"Hello Alyx"})
 // }
 
-var renderSearchResult = (result) {
+var renderSearchResult = (result) => {
     console.log(result.name)
     return `<div>
                 ${result.name}
