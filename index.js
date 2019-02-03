@@ -6,7 +6,6 @@ function searchRepositories() {
     const searchTerm = $("#searchTerms").val()
     console.log(searchTerm)
     const resp = $.get(`https://api.github.com/search/repositories?q=${searchTerm}`, data => {
-        console.log(data)
         $("#results").html(renderSearchResults(data))
         // $("#results").html("Hello Alyx")
     }).fail(error => {
